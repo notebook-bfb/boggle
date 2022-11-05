@@ -320,7 +320,7 @@ fn main() {
         67108864
     ]));
 
-    let answers = solve::solve(board, tree);
+    let answers = solve::solve(&board, &tree);
 
     for answer in answers.iter() {
         println!("{}", answer);

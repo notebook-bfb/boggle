@@ -19,7 +19,7 @@ struct Info {
     answers: Vec<String>
 }
 
-pub fn solve(board: Board, tree: WordTree) -> Box<[String]> {
+pub fn solve(board: &Board, tree: &WordTree) -> Box<[String]> {
     let mut info = Info {
         workers: Vec::<Worker>::with_capacity(16),
         answers: Vec::<String>::new()
